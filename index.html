@@ -7,17 +7,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Inicio</title>
 </head>
 <body class="bodyIndex">
     <header class="cabecera">
-        <logo class="cabecera_logo">
-            <a href="index.html"><img src="./images/logo-02.png"></a>
-        </logo>
-    <!-- menu de navegacion-->
     
+    <!-- menu de navegacion-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <logo class="cabecera_logo">
+                <a href="index.html"><img src="./images/logo-02.png"></a>
+            </logo>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pages/QuienesSomos.html">¿Quienes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/Profesionales.html">Profesionales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/Especialidades.html">Especialidades</a></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/ObrasSociales.html">Obras Sociales</a></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/Contacto.html">Contacto</a></a>
+              </li>
+   
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+     <!--  MENU EN ANTERIOR
         <nav class="cabecera_nav"> 
+            
             <ul>
                     <ul>
                         <li> <a href="./pages/QuienesSomos.html">¿Quienes somos?</a> </li>
@@ -25,21 +58,45 @@
                         <li> <a href="./pages/Especialidades.html">Especialidades</a> </li>
                         <li> <a href="./pages/ObrasSociales.html">Obras Sociales</a> </li>
                         <li> <a href="./pages/Contacto.html">Contacto</a> </li>
+                        
                     </ul>
                 
             </ul>
         </nav>
+    -->
     <!-- cabecera-->
    
      </header>
      <!-- contenedor -->
 
      <article class="contenedor">
-  
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/slider_img.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item ">
+                <img src="./images/sliderImg2-02.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item ">
+                <img src="./images/sliderImg3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>    
+          <!--
+         
             <div class="slider">
                 <img src="./images/slider_img.jpg">
             </div>
-
+ -->
             <seccion id="main">
                 <texto>
                 <h1> ¿Por qué consultar a una Psicopedagoga? </h1>
@@ -62,6 +119,8 @@
         <p>Tel. 2214522512</p>
         </contacto>
 </footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     
 </body>
 </html>
