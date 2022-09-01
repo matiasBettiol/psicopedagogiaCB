@@ -1,21 +1,16 @@
-* {
-    margin: 0;
-  }
+@import "generales";
+@import "variables";
+@import "nav";
+@import "cabecera";
+
+
   @media (max-width:900px) {
 
   .bodyIndex {
 
 }
 
-.cabecera {
- background-color:rgb(255, 255, 255);
- border-bottom: 05px solid #333333;
- margin: 0;
- padding: 10px;
-}
 
-.cabecera_logo img {width: 150px;
-}
 
 
 article {
@@ -621,21 +616,3 @@ font-family: 'Montserrat', sans-serif;
 
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
